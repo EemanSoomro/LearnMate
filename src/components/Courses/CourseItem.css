@@ -1,0 +1,98 @@
+.course-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .course-item-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .course-item-name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .course-item-description {
+    font-size: 14px;
+    color: #555;
+  }
+  .course-item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+  .course-item-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .course-item-rating {
+    font-size: 14px;
+    color: #ff9900;
+  }
+  .course-item-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  @media (max-width: 768px) {
+    .course-item {
+        padding: 8px;
+    }
+
+    .course-item-image {
+        height: 130px; /* Slightly smaller image for tablets */
+    }
+
+    .course-item-name {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .course-item-description {
+        font-size: 13px;
+    }
+
+    .course-item-price {
+        font-size: 15px;
+    }
+
+    .course-item-rating {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .course-item {
+        padding: 5px;
+    }
+
+    .course-item-image {
+        height: 100px; /* Smaller image for mobile devices */
+    }
+
+    .course-item-name {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+
+    .course-item-description {
+        font-size: 12px;
+    }
+
+    .course-item-price {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .course-item-rating {
+        font-size: 12px;
+    }
+}

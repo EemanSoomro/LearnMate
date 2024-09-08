@@ -1,0 +1,215 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.courses-container {
+    width: 100%;
+    padding-top: 70px; /* Ensure there's space for the navbar */
+}
+
+/* Style for the hero section */
+.courses-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Set to full viewport height */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+    padding-top: 80px; /* Ensure it does not overlap with navbar */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Style for the hero image */
+.courses-hero-image {
+    width: 100%;
+    height: 100%; /* Ensure the image covers the entire hero section */
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* Cover the area without distortion */
+    z-index: -1; /* Position image behind text */
+}
+
+/* Style for the text container */
+.courses-hero-text {
+    position: relative; /* Relative positioning for text */
+    max-width: 800px; /* Control text container width */
+    padding: 20px; /* Add padding for spacing */
+    color: #fff;
+    text-align: left; /* Align text to the left */
+}
+
+/* Style for the heading */
+.courses-hero-text h1 {
+    font-size: 3rem; /* Increase the font size */
+    margin-bottom: 10px; /* Adjust space below the heading */
+    margin-top: 0; /* Remove extra space above the heading */
+    color: #fff;
+}
+
+/* Style for the paragraph */
+.courses-hero-text p {
+    font-size: 1.25rem; /* Increase the font size */
+    line-height: 1.6;
+    margin-top: 0; /* Remove space above the paragraph */
+}
+
+/* Style for the filter and sort container */
+.filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 40px; /* Add space below filter and sort section */
+}
+
+/* Style for the filter dropdown */
+.filter select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Style for the sort dropdown */
+.sort select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Style for the courses grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style for each course item */
+.course-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.course-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.course-item h3 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.course-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Style for the load more button */
+.load-more-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.load-more-button {
+    background-color: #DAA520;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.load-more-button:hover {
+    background-color: #333;
+}
+@media (max-width: 768px) {
+    .courses-hero-text {
+        max-width: 600px; /* Reduce max width for text container */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .courses-hero-text h1 {
+        font-size: 2.5rem; /* Reduce font size for heading */
+    }
+
+    .courses-hero-text p {
+        font-size: 1.1rem; /* Reduce font size for paragraph */
+    }
+
+    .filter-sort-container {
+        flex-direction: column; /* Stack filter and sort vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid columns */
+    }
+
+    .course-item h3 {
+        font-size: 1.15rem; /* Slightly reduce font size */
+    }
+
+    .course-item p {
+        font-size: 0.9rem; /* Slightly reduce font size */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .courses-hero {
+        padding-top: 60px; /* Reduce top padding for hero section */
+    }
+
+    .courses-hero-text {
+        max-width: 100%; /* Full width for text container */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .courses-hero-text h1 {
+        font-size: 2rem; /* Further reduce font size for heading */
+    }
+
+    .courses-hero-text p {
+        font-size: 1rem; /* Further reduce font size for paragraph */
+    }
+
+    .filter-sort-container {
+        padding: 10px; /* Reduce padding */
+        margin-bottom: 20px; /* Reduce bottom margin */
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr; /* Single column for courses */
+        gap: 10px; /* Reduce gap between items */
+    }
+
+    .course-item h3 {
+        font-size: 1rem; /* Further reduce font size */
+    }
+
+    .course-item p {
+        font-size: 0.85rem; /* Further reduce font size */
+    }
+
+    .load-more-button {
+        padding: 8px 16px; /* Reduce button padding */
+        font-size: 0.9rem; /* Reduce button font size */
+    }
+}

@@ -1,0 +1,40 @@
+.title{
+    text-align: center;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 70px 0 30px;
+}
+.title h2{
+    font-size: 32px;
+    color: #DAA520;
+    
+    margin-top: 5px;
+    text-transform: none;
+
+}
+/* Tablets */
+@media (max-width: 768px) {
+    .title {
+        font-size: 14px; /* Slightly smaller font size */
+        margin: 50px 0 20px; /* Adjust margins for tablets */
+    }
+
+    .title h2 {
+        font-size: 28px; /* Slightly smaller font size */
+        margin-top: 5px; /* Keep top margin consistent */
+    }
+}
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .title {
+        font-size: 12px; /* Smaller font size for mobile */
+        margin: 30px 0 15px; /* Adjust margins for mobile */
+    }
+
+    .title h2 {
+        font-size: 24px; /* Smaller font size for mobile */
+        margin-top: 5px; /* Keep top margin consistent */
+    }
+}
